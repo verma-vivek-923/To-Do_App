@@ -6,7 +6,6 @@
 /* --accent-color:#00ffc386; */
 --text-color:white;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -19,8 +18,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* justify-content: center; */
 }
 .main-cont{
     background-color: #1c1d20;
@@ -30,10 +27,6 @@ body{
     padding: 15px;
     border-radius: 1rem;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-    /* margin-top: 100px; */
-    /* overflow: auto; */
     overflow: hidden;
     border-bottom: 5px solid #1c1d20;
   
@@ -41,14 +34,12 @@ body{
 ::-webkit-scrollbar{
     display: none;
 }
-
  h2{
     margin-top: 60px;
     word-spacing: 15px;
     font-size: 40px;
     color: #00ffc4;
 }
-
 form{
     position: relative;
     padding: 0;
@@ -71,14 +62,10 @@ form input{
 form input:focus{
     outline: 1px solid #00ffc389;
 }
-
-
-
 form button{
     position: absolute;
     right: 0px;
     background-color: var(--accent-color);
-    /* color: #fff; */
     font-size: 20px;
     top: 0px;
   height:100%;
@@ -87,13 +74,11 @@ form button{
   width: 80px;
   transition: 400ms ease;
 }
-
 form button:hover{
     background-color: #00ffc386;
     color: var(--text-color);
     cursor: pointer;
 }
-
 .todos{
     padding-bottom: 15px;
     height: 80%;
@@ -101,8 +86,6 @@ form button:hover{
     flex-direction: column;
     list-style: none;
     margin-top: 15px;
-    /* transition: 1s; */
-    /* gap: 5px; */
     overflow: scroll;
 }
 .todos .todo-items{
@@ -112,18 +95,15 @@ form button:hover{
     border-radius: .5rem;
     color: var(--text-color);
     background-color: var(--background-color);
-    /* background-color: var(--primary-color); */
     align-items: center;
     cursor: pointer;
 }
 li input{
     display: none;
 }
-
 .todo-items .check{
         width: 20px;
         height: 20px;
-        /* background-color: azure; */
         border: 2px solid var(--accent-color);
         border-radius: 50%;
         display: flex;
@@ -135,7 +115,6 @@ li input{
 .todo-items .check svg{
     fill:transparent;
 }
-
  .tasks{
     padding: 15px;
     flex-grow: 1;
@@ -157,29 +136,23 @@ li input{
 .todo-items .dlt-btn svg:hover{
     fill:red;
 }
-
 li input:checked ~ .check{
     background-color: var(--accent-color);
 }
 li input:checked ~ .check svg{
     fill: var(--background-color);
 }
-
 li input:checked ~ .tasks{
    text-decoration:line-through;
    color: var(--secondary-color);
 }
-
-
 @media (max-width:500px){
     body{
     background-color: #1c1d20;
    
 }
-
 h2{
     margin-top: 150px;
-
 }
 .main-cont{
     width: 90vw;
@@ -196,6 +169,5 @@ form button{
     position: static;
   height:30px;
   width: 98%;
-
 }
 }
